@@ -24,10 +24,11 @@ SECRET_KEY = 'django-insecure-+xkdmzmr4wq3xr(1%*8vkalcj%7bipibr#48-s@oph@6r^750z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['for.1vp.ru']
 
 # Application definition
+#import django
+#django.setup()
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -36,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    #'business.psychic.Guess',
 ]
 
 MIDDLEWARE = [
@@ -53,7 +56,7 @@ ROOT_URLCONF = 'psychic.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
