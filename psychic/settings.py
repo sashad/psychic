@@ -26,9 +26,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['for.1vp.ru']
 
+SESSION_COOKIE_AGE = 3600
+
 # Application definition
-#import django
-#django.setup()
 
 INSTALLED_APPS = [
     'django.contrib.admin',
