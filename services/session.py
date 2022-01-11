@@ -1,4 +1,5 @@
-import pickle
+import pickle, random
+from business.psychic import Psychic
 
 def init_session_data(request):
     data = request.session.get('data')
